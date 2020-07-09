@@ -3,7 +3,7 @@
     SASTRA DEEMED TO BE UNIVERSITY
     THANJAVUR TAMILNADU'''
 from flask import Flask, render_template, request
-app = Flask(__name__,template_folder = 'template')
+app = Flask(__name__,template_folder = 'templates')
 
 @app.route('/')
 def student():
