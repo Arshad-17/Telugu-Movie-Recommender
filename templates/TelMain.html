@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Telugu Movie Recommender</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+	<h3>తెలుగు MOVIE RECOMMENDATION ENGINE <br>
+		A Machine Learning Web Application<br>
+		Made with 🧡  Using Python Flask<br>
+		Deployed with Heroku<br>
+	</h3>
+	<img id = "logo" src="/static/logo1.png" width="280" height="40">
+	<div class="contact">
+               <a target="_blank" href="#"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/Muhammad-Arshad-Ali-Shaik"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+		
+	</div>
+	<div class="container">
+		
+		<form action="http://localhost:5000/result" target="_blank" method="post">
+			
+			<pre>(Kindly Avoid Spelling mistakes)</pre>
+			<div class="in">
+			<label><h5>NAME OF THE MOVIE:</h5></label>
+			<input type="text" name="Name">
+
+			</div>
+			<pre>
+				
+			</pre>
+			<div class="butt">
+				<input type="submit" name="submit">
+			</div>
+
+		</form>
+	</div>
+
+<style type="text/css">
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat',"Work Sans", sans-serif;
+	 
+
+}
+body
+{
+	background-image: url(/static/2017.jpg);
+
+}
+#logo
+{
+	width: 350px;
+	height: 260px;
+	position: absolute;
+	left:50%;
+	top: 1%;
+	
+}
+.container
+{
+	color: #fff;
+	width:400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: rgba(0,0,0,0.85);
+	float: right;
+	transform: translate(-50%,-50%);
+	padding: 50px;
+	
+}
+
+.container .in input
+{
+	width:100%;
+	padding: 10px;
+	color:#000;
+	letter-spacing: 1px;
+	outline:none;
+	font-size: 16px;
+	font-weight: 20px;
+}
+
+form
+{
+}
+
+.container .in label
+{
+	position: absolute;
+	top:0;
+	letter-spacing: 1px;
+	padding:10px 0px;
+	color:#ffffff;
+	font-weight: 20px;
+	transition: 0.5s;
+	font-size: 16px;
+}
+
+.container .butt input
+{
+	border: 1px solid black;
+
+	color:#000;
+	background: rgb(238,174,202);
+	padding: 5px 20px;
+	font-size: 14px;
+	border-radius: 15px;
+	font-weight: 20px;
+	padding: 10px;
+}
+.container .butt input:hover
+{
+	
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	color:#000;
+}
+
+.header
+{
+	height: 22vh;
+	width: 100%;
+background: linear-gradient(317deg, rgba(63,94,251,1) 0%, rgba(252,70,236,0.9923319669664741) 100%);;
+	color: white;
+	
+}
+.header h3
+{
+	width:450px;
+	padding:1px;
+	
+ 
+}
+ul
+{
+	left:69%;
+	top:15%;
+	list-style: none;
+list-style-type: inline;
+}
+
+ul li
+{
+
+	float: right;
+     display: inline-block;
+}
+
+ul li a
+{
+	
+     text-decoration:none;
+	 color: #ffffff;
+	 padding: 5px 20px;
+	 border: 1px solid #c0c0c0;
+	 border-radius: 5px;
+      text-shadow:0.6px 0 0 #000;
+	  box-shadow:1px 2px 10px 3px black;
+	  background-image: linear-gradient(90deg,#3f5efb,#fc466b);
+}
+
+ul li a:hover
+{
+    background-color: #fff;
+    color:#000;
+}
+.contact
+{
+	float:right;
+}
+ .contact-icon{
+	color: #ffffff;
+	padding: 7px;
+}
+
+.contact-icon:hover{
+	color: #8c8c8c;
+}
+
+@media only screen and (max-width: 500px)
+{
+#logo
+{
+width:200px;
+height:80px;
+float:left;
+top:30px;
+}
+
+.header h3
+{
+ font-size:9px;
+}
+
+.contact
+{
+float: right;
+
+
+}
+</style>
+</body>
+</html>
+ 
+
