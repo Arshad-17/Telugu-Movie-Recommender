@@ -1,7 +1,7 @@
 #Author : SHAIK MUHAMMAD ARSHAD ALI
-''' B.TECH 3RD YEAR ELECTRONICS AND COMMUNICATIONS ENGINEERING
+''' B.TECH ELECTRONICS AND COMMUNICATIONS ENGINEERING
     SASTRA DEEMED TO BE UNIVERSITY
-    THANJAVUR TAMILNADU'''
+    THANJAVUR, TAMILNADU'''
 from flask import Flask, render_template, request
 import pandas as pd
 app = Flask(__name__,template_folder = 'templates')
