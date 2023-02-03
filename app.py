@@ -3,6 +3,7 @@
     SASTRA DEEMED TO BE UNIVERSITY
     THANJAVUR TAMILNADU'''
 from flask import Flask, render_template, request
+import pandas as pd
 app = Flask(__name__,template_folder = 'templates')
 
 @app.route('/')
@@ -15,7 +16,6 @@ def recommend():
         s = request.form["Name"]
         title = str(s)
         title = title.title()
-        import pandas as pd
         df = pd.read_csv("Popular_telugumovies_dataset.csv")
         df['No.of.Ratings'] = df['No.of.Ratings'].str.replace(",","")
         df['No.of.Ratings'] = pd.to_numeric(df['No.of.Ratings'],errors='coerce')
